@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/produto.css">
+</head>
+
+<body>
+    <div class="produto-app-container">
+        <div class="produto-app-wrapper">
+            <form action="javascript:;" class="form">
+                <input type="text" name="nome" id="nome" placeholder="Nome" aria-required="true">
+                <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade" aria-required="true">
+                <input type="number" name="preco" id="preco" placeholder="Preço" aria-required="true">
+                <input type="number" name="preco_total" id="preco_total" placeholder="Preço Total" aria-required="true">
+            </form>
+            <div class="botao">
+                <button onclick="criarItem()">Criar Item</button>
+                <button onclick="exibirItem()">Exibir Item</button>
+                <button onclick="atualizarItem()">Atualizar Item</button>
+                <button onclick="deletarItem()">Deletar Item</button>
+            </div>
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/produto.js"></script>
+</body>
+
+</html>
